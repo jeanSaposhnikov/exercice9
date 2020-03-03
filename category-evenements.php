@@ -26,8 +26,8 @@ get_header();
 				// echo '<p>' . ($mois%3 + 1) . '</p>'; 
 				$gridArea = $jour . '/' . $mois . '/' . ($jour+1) . '/' . ($mois+1);
 				// echo '<p>' .$gridArea . '</p>' ;
-				echo '<h2  style="grid-area:'. $gridArea . '">' . get_the_title() . $gridArea .'</h2>';
-
+				echo '<h2  style="grid-area:'. $gridArea . '">' . get_the_title() . $gridArea .get_the_date(' j / m / Y') .'</h2>';
+				
 
                 //echo '<div>' . get_the_title($query->post->ID) . '</div>';
                
